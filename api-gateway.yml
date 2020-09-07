@@ -26,3 +26,15 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
+
+honeycomb:
+  beeline:
+    service-name: petclinic_api_gateway
+    dataset: petclinic_api_honeycomb_auto
+    write-key: 601b1fc7e219279b3cde4e6b9eb49a1a
+    sample-rate: 1
+    enabled: true
+    rest-template:
+      enabled: true
+    log-honeycomb-responses: true
+    include-path-patterns: /**
